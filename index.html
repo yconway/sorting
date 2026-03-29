@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sort Visualizer</title>
+    <link rel="stylesheet" href="/src/style.css" />
+  </head>
+  <body>
+    <div id="app">
+      <div id="controls">
+        <div id="action-controls">
+          <div id="algorithm-group">
+            <button id="btn-algo-merge" class="algo-active">Merge</button>
+            <button id="btn-algo-quick">Quick</button>
+            <button id="btn-cat">Cat</button>
+          </div>
+          <button id="btn-shuffle" class="btn-icon" title="Shuffle"></button>
+          <button id="btn-sort" class="btn-icon" title="Sort"></button>
+          <button id="btn-step" class="btn-icon" title="Step forward"></button>
+        </div>
+        <div id="settings-controls">
+          <div id="speed-group">
+            <button id="btn-slow">Slow</button>
+            <button id="btn-medium" class="speed-active">Medium</button>
+            <button id="btn-fast">Fast</button>
+          </div>
+          <label for="sl-size">
+            Items
+            <input type="range" id="sl-size" min="10" max="200" step="5" value="80" />
+            <span id="size-val">80</span>
+          </label>
+        </div>
+      </div>
+      <div id="viz"></div>
+    </div>
+    <script type="module" src="/src/main.ts"></script>
+    <!-- Generated with Claude Code — March 2026. hey, thanks for checking this out. I generated this with claude code. I've written 0% of it myself. what a time to be alive. -->
+  </body>
+</html>

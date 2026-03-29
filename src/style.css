@@ -1,0 +1,140 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #0d0d14;
+  color: #ccc;
+  font-family: ui-monospace, Consolas, monospace;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  overflow: hidden;
+}
+
+#app {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  min-height: 0;
+}
+
+#controls {
+  padding: 0;
+  border-bottom: 1px solid #1a1a2e;
+  flex-shrink: 0;
+  display: flex;
+  align-items: stretch;
+}
+
+#action-controls {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 8px 20px;
+}
+
+#settings-controls {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 8px 20px;
+  margin-left: auto;
+  border-left: 1px solid #2a2a44;
+  opacity: 0.65;
+}
+
+#algorithm-group {
+  display: flex;
+  gap: 4px;
+}
+
+#algorithm-group button {
+  padding: 7px 14px;
+}
+
+button.algo-active {
+  background: #1e2a3e;
+  color: #7ec8f5;
+  border-color: #7ec8f5;
+}
+
+button.cat-active {
+  background: #2a1e10;
+  color: #f5a05a;
+  border-color: #f5a05a;
+}
+
+label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 12px;
+  color: #888;
+}
+
+input[type="range"] {
+  width: 120px;
+  accent-color: #7ec8f5;
+}
+
+#size-val {
+  color: #aaa;
+  min-width: 28px;
+}
+
+button {
+  background: #1a1a2e;
+  color: #ccc;
+  border: 1px solid #2a2a44;
+  border-radius: 6px;
+  padding: 7px 18px;
+  font-size: 13px;
+  font-family: inherit;
+  cursor: pointer;
+  letter-spacing: 0.04em;
+  transition: background 0.15s, color 0.15s;
+}
+
+button:hover {
+  background: #24243e;
+  color: #fff;
+}
+
+button.btn-icon {
+  padding: 7px 10px;
+  min-width: 36px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#btn-shuffle {
+  padding: 4px 10px;
+}
+
+#speed-group {
+  display: flex;
+  gap: 4px;
+}
+
+#speed-group button {
+  padding: 7px 12px;
+}
+
+button.speed-active {
+  background: #1e2a3e;
+  color: #7ec8f5;
+  border-color: #7ec8f5;
+}
+
+#viz {
+  flex: 1;
+  overflow: hidden;
+}
+
+svg {
+  display: block;
+}
